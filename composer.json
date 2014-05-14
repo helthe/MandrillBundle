@@ -1,0 +1,27 @@
+{
+    "name":        "helthe/mandrill-bundle",
+    "type":        "symfony-bundle",
+    "description": "Helthe Mandrill bundle for Symfony 2",
+    "keywords":    ["email", "mandrill", "mandrill api"],
+    "homepage":    "https://helthe.co",
+    "license":     "MIT",
+    "authors": [
+        {
+            "name": "Carl Alexander",
+            "email": "carlalexander@helthe.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "helthe/mandrill": "dev-master",
+        "symfony/framework-bundle": "~2.3"
+    },
+    "autoload": {
+        "psr-4": { "Helthe\\Bundle\\MandrillBundle\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

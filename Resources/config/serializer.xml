@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="helthe_mandrill.serializer.class">Symfony\Component\Serializer\Serializer</parameter>
+        <parameter key="helthe_mandrill.serializer.encoder.class">Symfony\Component\Serializer\Encoder\JsonEncoder</parameter>
+        <parameter key="helthe_mandrill.serializer.normalizer.class">Symfony\Component\Serializer\Normalizer\CustomNormalizer</parameter>
+    </parameters>
+
+    <services>
+        <service id="helthe_mandrill.serializer" class="%helthe_mandrill.serializer.class%" >
+            <argument type="collection" />
+            <argument type="collection" />
+        </service>
+
+        <service id="helthe_mandrill.serializer.encoder" class="%helthe_mandrill.serializer.encoder.class%" public="false" >
+            <tag name="helthe_mandrill.serializer.encoder" />
+        </service>
+
+        <service id="helthe_mandrill.serializer.normalizer" class="%helthe_mandrill.serializer.normalizer.class%" public="false" >
+            <tag name="helthe_mandrill.serializer.normalizer" />
+        </service>
+    </services>
+</container>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="helthe_mandrill.mailer.basic.class">Helthe\Component\Mandrill\Mailer\Mailer</parameter>
+        <parameter key="helthe_mandrill.mailer.templating.class">Helthe\Component\Mandrill\Mailer\TemplatingEngineMailer</parameter>
+    </parameters>
+
+    <services>
+        <service id="helthe_mandrill.mailer.basic" class="%helthe_mandrill.mailer.basic.class%">
+            <argument type="service" id="helthe_mandrill.client" />
+        </service>
+
+        <service id="helthe_mandrill.mailer.templating" class="%helthe_mandrill.mailer.templating.class%">
+            <argument type="service" id="helthe_mandrill.client" />
+            <argument type="service" id="templating" />
+        </service>
+    </services>
+</container>
