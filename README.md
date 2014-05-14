@@ -1,4 +1,4 @@
-# Helthe Mandrill Bundle [![Build Status](https://travis-ci.org/helthe/MandrillBundle.png?branch=master)](https://travis-ci.org/helthe/MandrillBundle) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/helthe/Mandrill/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/helthe/MandrillBundle/?branch=master)
+# Helthe Mandrill Bundle [![Build Status](https://travis-ci.org/helthe/MandrillBundle.png?branch=master)](https://travis-ci.org/helthe/MandrillBundle) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/helthe/MandrillBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/helthe/MandrillBundle/?branch=master)
 
 Helthe Mandrill Bundle integrates the [Helthe Mandrill Component](https://github.com/helthe/Mandrill)
 with your Symfony2 application.
